@@ -43,7 +43,7 @@
     catch(err) {
         var loadNotes = "Enter your notes here and click save";
     }
-    $("note-area").val(loadNotes);
+    $("#note-area").val(loadNotes);
     var sp = "/";
     var today = new Date();
     var dd = today.getDate();
@@ -57,8 +57,8 @@
     }
     $('#date').html(mm+sp+dd+sp+yyyy);
     
-    $("saveNoteBtn").click(function(){
-        var currentNotes = $("note-area").val();
+    $("#saveNoteBtn").click(function(){
+        var currentNotes = $("#note-area").val();
         localStorage.setItem("notes", currentNotes);
     })
 
